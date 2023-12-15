@@ -23,6 +23,9 @@ export async function Footer() {
 
   const navItems = footer?.navItems || []
 
+  const d = new Date()
+  let year = d.getFullYear()
+
   return (
     <footer className={classes.footer}>
       <Gutter className={classes.wrap}>
@@ -30,14 +33,16 @@ export async function Footer() {
           <picture>
             <img
               className={classes.logo}
-              alt="Payload Logo"
-              src="https://raw.githubusercontent.com/payloadcms/payload/main/packages/payload/src/admin/assets/images/payload-logo-light.svg"
+              src="/tbtLogoSmall.png"
+              height={50}
+              width={148}
+              alt="The Beaten Trail"
             />
           </picture>
         </Link>
         <nav className={classes.nav}>
-          <ThemeSelector />
-          {navItems.map(({ link }, i) => {
+          {/*<ThemeSelector />
+           {navItems.map(({ link }, i) => {
             return <CMSLink key={i} {...link} />
           })}
           <Link href="/admin">Admin</Link>
@@ -50,7 +55,10 @@ export async function Footer() {
           </Link>
           <Link href="https://payloadcms.com" target="_blank" rel="noopener noreferrer">
             Payload
-          </Link>
+          </Link> 
+          <Link href="/admin">Admin</Link>*/}
+          <Link href="/admin">About</Link>
+          <Link href="/admin">Copyright &copy; {year} The Beaten Trail - All Rights Reserved.</Link>
         </nav>
       </Gutter>
     </footer>

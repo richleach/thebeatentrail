@@ -36,6 +36,17 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
           <Link href="/create-account">Create Account</Link>
         </React.Fragment>
       )}
+      <Link href="">Videos</Link>
+      <span style={{ color: 'lightgrey' }}>|</span>
+      <Link href="">Join Us On A Ride</Link>
+      <span style={{ color: 'lightgrey' }}>|</span>
+      <Link href="">Amazon Favorites</Link>
+      <span style={{ color: 'lightgrey' }}>|</span>
+      <Link href="">Our Gear</Link>
+      <span style={{ color: 'lightgrey' }}>|</span>
+      <Link href="">Blog</Link>
+      <span style={{ color: 'lightgrey' }}>|</span>
+      <Link href="">Partners &amp; Friends</Link>
     </nav>
   )
 }

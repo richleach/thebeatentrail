@@ -3,6 +3,7 @@
 }
 
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Header } from '../../../payload/payload-types'
@@ -24,21 +25,28 @@ export async function Header() {
     // console.error(error)
   }
 
+  const tbtStyle = {
+    color: 'rgb(173,146,52)',
+    textDecoration: 'none',
+  }
+
   return (
     <>
       <header className={classes.header}>
         <Gutter className={classes.wrap}>
-          <Link href="/">
+          <Link href="/" style={tbtStyle}>
             {/* Cannot use the `<picture>` element here with `srcSet`
               This is because the theme is able to be overridden by the user
               And so `@media (prefers-color-scheme: dark)` will not work
               Instead, we just use CSS to invert the color via `filter: invert(1)` based on `[data-theme="dark"]`
             */}
-            <img
+            {/* <img
               className={classes.logo}
-              alt="Payload Logo"
+              alt="The Beaten Trail Logo"
               src="https://raw.githubusercontent.com/payloadcms/payload/main/packages/payload/src/admin/assets/images/payload-logo-light.svg"
-            />
+            /> */}
+
+            <Image src="/tbtLogoSmall.png" height={50} width={148} alt="The Beaten Trail" />
           </Link>
           <HeaderNav header={header} />
         </Gutter>

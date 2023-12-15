@@ -15,6 +15,12 @@
   width: 150px;
 }
 
+.beatenTrailLogo {
+  color: rgb(173, 146, 52);
+}
+
+
+
 :global([data-theme="light"]) {
   .logo {
     filter: invert(1);
