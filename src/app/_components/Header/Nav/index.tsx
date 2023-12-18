@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import { FacebookIcon, FacebookShareButton } from 'next-share'
 
 import { Header as HeaderType, User } from '../../../../payload/payload-types'
 import { useAuth } from '../../../_providers/Auth'
@@ -47,6 +48,13 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       <Link href="">Blog</Link>
       <span style={{ color: 'lightgrey' }}>|</span>
       <Link href="">Partners &amp; Friends</Link>
+      <FacebookShareButton
+        url={'https://github.com/next-share'}
+        quote={'next-share is a social share buttons for your next React apps.'}
+        hashtag={'#nextshare'}
+      >
+        <FacebookIcon size={32} round />
+      </FacebookShareButton>
     </nav>
   )
 }
