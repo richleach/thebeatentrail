@@ -76,7 +76,13 @@ export default buildConfig({
       }
     },
   },
-  editor: slateEditor({}), // editor-config
+  //editor: slateEditor({}),
+  editor: slateEditor({
+    admin: {
+      elements: ['textAlign'],
+    },
+  }),
+  // editor-config
   // database-adapter-config-start
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
