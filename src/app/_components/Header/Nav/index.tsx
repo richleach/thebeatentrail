@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
-import { FacebookIcon, FacebookShareButton } from 'next-share'
 
 import { Header as HeaderType, User } from '../../../../payload/payload-types'
 import { useAuth } from '../../../_providers/Auth'
@@ -48,13 +48,41 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       <Link href="">Blog</Link>
       <span style={{ color: 'lightgrey' }}>|</span>
       <Link href="">Partners &amp; Friends</Link>
-      <FacebookShareButton
-        url={'https://github.com/next-share'}
-        quote={'next-share is a social share buttons for your next React apps.'}
-        hashtag={'#nextshare'}
-      >
-        <FacebookIcon size={32} round />
-      </FacebookShareButton>
+
+      <Link href="https://www.facebook.com/TheBeatenTrailLLC" target="_blank">
+        <Image
+          src="/socialMedia/Facebook.png"
+          width={32}
+          height={32}
+          alt="Check us out on Facebook"
+        />
+      </Link>
+
+      <Link href="https://www.youtube.com/channel/UCnIyytMWGt41WZAc6QocKcQ" target="_blank">
+        <Image
+          src="/socialMedia/Youtube.png"
+          width={32}
+          height={32}
+          alt="Check us out on Youtube"
+        />
+      </Link>
+
+      <Link href="https://www.tiktok.com/@thebeatentrail" target="_blank">
+        <Image src="/socialMedia/Tiktok.png" width={32} height={32} alt="Check us out on Tiktok" />
+      </Link>
+
+      <Link href="https://www.instagram.com/thebeatentrail/" target="_blank">
+        <Image
+          src="/socialMedia/Instagram.png"
+          width={32}
+          height={32}
+          alt="Check us out on Instagram"
+        />
+      </Link>
+
+      <Link href="https://www.twitter.com/@trailbeaten" target="_blank">
+        <Image src="/socialMedia/Twitter.png" width={32} height={32} alt="Check us out on X" />
+      </Link>
     </nav>
   )
 }

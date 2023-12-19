@@ -2,7 +2,8 @@
 
 .nav {
   display: flex;
-  gap: calc(var(--base) / 4) var(--base);
+  //gap: calc(var(--base) / 4) var(--base);
+  gap: 10px;
   align-items: center;
   flex-wrap: wrap;
   opacity: 1;
