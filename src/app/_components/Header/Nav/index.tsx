@@ -50,7 +50,9 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       <Link href="">Partners &amp; Friends</Link>
 
       <Link href="https://www.facebook.com/TheBeatenTrailLLC" target="_blank">
-        <Image src="/Facebook.png" width={32} height={32} alt="Check us out on Facebook" />
+        <picture>
+          <Image src="/Facebook.png" width={32} height={32} alt="Check us out on Facebook" />
+        </picture>
       </Link>
 
       <Link href="https://www.youtube.com/channel/UCnIyytMWGt41WZAc6QocKcQ" target="_blank">
