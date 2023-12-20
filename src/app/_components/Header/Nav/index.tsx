@@ -54,7 +54,8 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
         </picture>
       </Link>
 
-      <img src="/Facebook.png" alt="facebook icon" />
+      <Image src="/tbtLogoSmall.png" height={32} width={148} alt="The Beaten Trail" />
+
       <Link href="https://www.youtube.com/channel/UCnIyytMWGt41WZAc6QocKcQ" target="_blank">
         <Image src="/Youtube.png" width={32} height={32} alt="Check us out on Youtube" />
       </Link>
