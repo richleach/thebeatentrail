@@ -2,6 +2,7 @@
 
 .header {
   padding: var(--base) 0;
+  background-color: rgb(245, 209, 87);  
 }
 
 .wrap {
@@ -9,6 +10,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: calc(var(--base) / 2) var(--base);
+  //border: thin solid blue;
 }
 
 .logo {

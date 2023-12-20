@@ -29,24 +29,29 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       {navItems.map(({ link }, i) => {
         return <CMSLink key={i} {...link} appearance="none" />
       })}
+
       <CartLink />
+
       {user && <Link href="/account">Account</Link>}
       {!user && (
         <React.Fragment>
           <Link href="/login">Login</Link>
-          <Link href="/create-account">Create Account</Link>
+          <Link href="/create-account" style={{ paddingRight: '150px' }}>
+            Create Account
+          </Link>
         </React.Fragment>
       )}
+
       <Link href="">Videos</Link>
-      <span style={{ color: 'lightgrey' }}>|</span>
-      <Link href="">Join Us On A Ride</Link>
-      <span style={{ color: 'lightgrey' }}>|</span>
+      <span style={{ color: 'darkgrey' }}>|</span>
+      <Link href="">Ride With Us</Link>
+      <span style={{ color: 'darkgrey' }}>|</span>
       <Link href="">Amazon Favorites</Link>
-      <span style={{ color: 'lightgrey' }}>|</span>
+      <span style={{ color: 'darkgrey' }}>|</span>
       <Link href="">Our Gear</Link>
-      <span style={{ color: 'lightgrey' }}>|</span>
+      <span style={{ color: 'darkgrey' }}>|</span>
       <Link href="">Blog</Link>
-      <span style={{ color: 'lightgrey' }}>|</span>
+      <span style={{ color: 'darkgrey' }}>|</span>
       <Link href="">Partners &amp; Friends</Link>
     </nav>
   )

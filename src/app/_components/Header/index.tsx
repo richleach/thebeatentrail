@@ -28,6 +28,11 @@ export async function Header() {
   const tbtStyle = {
     color: 'rgb(173,146,52)',
     textDecoration: 'none',
+    marginRight: '250',
+  }
+  const tbtSpacer = {
+    paddingRight: '20px',
+    marginRight: '20',
   }
 
   return (
@@ -37,6 +42,7 @@ export async function Header() {
           <Link href="/" style={tbtStyle}>
             <Image src="/tbtLogoSmall.png" height={50} width={148} alt="The Beaten Trail" />
           </Link>
+
           <HeaderNav header={header} />
         </Gutter>
       </header>
