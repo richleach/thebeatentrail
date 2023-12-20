@@ -50,38 +50,23 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       <Link href="">Partners &amp; Friends</Link>
 
       <Link href="https://www.facebook.com/TheBeatenTrailLLC" target="_blank">
-        <Image
-          src="/socialMedia/Facebook.png"
-          width={32}
-          height={32}
-          alt="Check us out on Facebook"
-        />
+        <Image src="/Facebook.png" width={32} height={32} alt="Check us out on Facebook" />
       </Link>
 
       <Link href="https://www.youtube.com/channel/UCnIyytMWGt41WZAc6QocKcQ" target="_blank">
-        <Image
-          src="/socialMedia/Youtube.png"
-          width={32}
-          height={32}
-          alt="Check us out on Youtube"
-        />
+        <Image src="/Youtube.png" width={32} height={32} alt="Check us out on Youtube" />
       </Link>
 
       <Link href="https://www.tiktok.com/@thebeatentrail" target="_blank">
-        <Image src="/socialMedia/Tiktok.png" width={32} height={32} alt="Check us out on Tiktok" />
+        <Image src="/Tiktok.png" width={32} height={32} alt="Check us out on Tiktok" />
       </Link>
 
       <Link href="https://www.instagram.com/thebeatentrail/" target="_blank">
-        <Image
-          src="/socialMedia/Instagram.png"
-          width={32}
-          height={32}
-          alt="Check us out on Instagram"
-        />
+        <Image src="/Instagram.png" width={32} height={32} alt="Check us out on Instagram" />
       </Link>
 
       <Link href="https://www.twitter.com/@trailbeaten" target="_blank">
-        <Image src="/socialMedia/Twitter.png" width={32} height={32} alt="Check us out on X" />
+        <Image src="/Twitter.png" width={32} height={32} alt="Check us out on X" />
       </Link>
     </nav>
   )
