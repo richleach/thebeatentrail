@@ -48,26 +48,6 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
       <Link href="">Blog</Link>
       <span style={{ color: 'lightgrey' }}>|</span>
       <Link href="">Partners &amp; Friends</Link>
-      <Link href="https://www.facebook.com/TheBeatenTrailLLC" target="_blank">
-        <picture>
-          <Image src="/Facebook.png" width={32} height={32} alt="Check us out on Facebook" />
-        </picture>
-      </Link>
-
-      <Image src="/tbtLogoSmall.png" height={32} width={148} alt="The Beaten Trail" />
-
-      <Link href="https://www.youtube.com/channel/UCnIyytMWGt41WZAc6QocKcQ" target="_blank">
-        <Image src="/Youtube.png" width={32} height={32} alt="Check us out on Youtube" />
-      </Link>
-      <Link href="https://www.tiktok.com/@thebeatentrail" target="_blank">
-        <Image src="/Tiktok.png" width={32} height={32} alt="Check us out on Tiktok" />
-      </Link>
-      <Link href="https://www.instagram.com/thebeatentrail/" target="_blank">
-        <Image src="/Instagram.png" width={32} height={32} alt="Check us out on Instagram" />
-      </Link>
-      <Link href="https://www.twitter.com/@trailbeaten" target="_blank">
-        <Image src="/Twitter.png" width={32} height={32} alt="Check us out on X" />
-      </Link>
     </nav>
   )
 }

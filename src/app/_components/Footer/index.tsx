@@ -1,4 +1,5 @@
 import React from 'react'
+import { SocialIcon } from 'react-social-icons'
 import Link from 'next/link'
 
 import { type Footer } from '../../../payload/payload-types'
@@ -41,22 +42,16 @@ export async function Footer() {
           </picture>
         </Link>
         <nav className={classes.nav}>
-          {/*<ThemeSelector />
-           {navItems.map(({ link }, i) => {
-            return <CMSLink key={i} {...link} />
-          })}
-          <Link href="/admin">Admin</Link>
-          <Link
-            href="https://github.com/payloadcms/payload/tree/main/templates/ecommerce"
+          <SocialIcon url="https://www.facebook.com/TheBeatenTrailLLC" target="_blank" />
+          <SocialIcon
+            url="https://www.youtube.com/channel/UCnIyytMWGt41WZAc6QocKcQ"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            Source Code
-          </Link>
-          <Link href="https://payloadcms.com" target="_blank" rel="noopener noreferrer">
-            Payload
-          </Link> 
-          <Link href="/admin">Admin</Link>*/}
+          />
+          <SocialIcon url="https://www.tiktok.com/@thebeatentrail" target="_blank" />
+          <SocialIcon url="https://www.instagram.com/thebeatentrail/" target="_blank" />
+          <SocialIcon url="https://twitter.com@trailbeaten" target="_blank" />
+        </nav>
+        <nav className={classes.nav}>
           <Link href="/admin">About</Link>
           <Link href="/admin">Copyright &copy; {year} The Beaten Trail - All Rights Reserved.</Link>
         </nav>
