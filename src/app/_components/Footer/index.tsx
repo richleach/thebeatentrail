@@ -42,6 +42,13 @@ export async function Footer() {
           </picture>
         </Link>
         <nav className={classes.nav}>
+          <Link href="/admin">About &nbsp; </Link>
+          <Link href="/admin">Privacy &nbsp; </Link>
+          <Link href="/admin">Contact &nbsp; </Link>
+          <Link href="/admin">Terms &nbsp; </Link>
+          <Link href="/admin">Copyright &copy; {year}</Link>
+        </nav>
+        <nav className={classes.nav}>
           <SocialIcon url="https://www.facebook.com/TheBeatenTrailLLC" target="_blank" />
           <SocialIcon
             url="https://www.youtube.com/channel/UCnIyytMWGt41WZAc6QocKcQ"
@@ -50,10 +57,6 @@ export async function Footer() {
           <SocialIcon url="https://www.tiktok.com/@thebeatentrail" target="_blank" />
           <SocialIcon url="https://www.instagram.com/thebeatentrail/" target="_blank" />
           <SocialIcon url="https://twitter.com@trailbeaten" target="_blank" />
-        </nav>
-        <nav className={classes.nav}>
-          <Link href="/admin">About</Link>
-          <Link href="/admin">Copyright &copy; {year} The Beaten Trail - All Rights Reserved.</Link>
         </nav>
       </Gutter>
     </footer>
