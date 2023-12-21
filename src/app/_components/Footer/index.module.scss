@@ -7,6 +7,7 @@
   background-color: rgb(245, 209, 87);
   //color: var(--theme-elevation-0);
   color: black;
+  border-top: thin solid purple;
 
   @include small-break {
     padding: calc(var(--base) * 2) 0;
