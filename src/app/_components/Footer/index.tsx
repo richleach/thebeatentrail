@@ -42,11 +42,11 @@ export async function Footer() {
           </picture>
         </Link>
         <nav className={classes.nav}>
-          <Link href="/admin">About &nbsp; </Link>
-          <Link href="/admin">Privacy &nbsp; </Link>
-          <Link href="/admin">Contact &nbsp; </Link>
-          <Link href="/admin">Terms &nbsp; </Link>
-          <Link href="/admin">Copyright &copy; {year}</Link>
+          <Link href="/about">About &nbsp; </Link>
+          <Link href="/privacy">Privacy &nbsp; </Link>
+          <Link href="/contact">Contact &nbsp; </Link>
+          <Link href="/terms">Terms &nbsp; </Link>
+          <Link href="/">Copyright &copy; {year}</Link>
         </nav>
         <nav className={classes.nav}>
           <SocialIcon url="https://www.facebook.com/TheBeatenTrailLLC" target="_blank" />

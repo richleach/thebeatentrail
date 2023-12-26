@@ -46,17 +46,17 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
         </React.Fragment>
       )}
 
-      <Link href="">Videos</Link>
+      <Link href="/videos">Videos</Link>
       <span style={{ color: 'darkgrey' }}>|</span>
-      <Link href="">Ride With Us</Link>
+      <Link href="/ride-with-us">Ride With Us</Link>
       <span style={{ color: 'darkgrey' }}>|</span>
-      <Link href="">Amazon Favorites</Link>
+      <Link href="/amazon-favorites">Amazon Favorites</Link>
       <span style={{ color: 'darkgrey' }}>|</span>
-      <Link href="">Our Gear</Link>
+      <Link href="/our-gear">Our Gear</Link>
       <span style={{ color: 'darkgrey' }}>|</span>
-      <Link href="">Blog</Link>
+      <Link href="/blog">Blog</Link>
       <span style={{ color: 'darkgrey' }}>|</span>
-      <Link href="">Partners &amp; Friends</Link>
+      <Link href="/partners-and-friends">Partners &amp; Friends</Link>
     </nav>
   )
 }
