@@ -32,7 +32,11 @@ export const HeaderNav: React.FC<{ header: HeaderType }> = ({ header }) => {
 
       <CartLink />
 
-      {user && <Link href="/account">Account</Link>}
+      {user && (
+        <Link href="/account" style={{ paddingRight: '150px' }}>
+          Account
+        </Link>
+      )}
       {!user && (
         <React.Fragment>
           <Link href="/login">Login</Link>
