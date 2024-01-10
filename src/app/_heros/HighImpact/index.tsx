@@ -34,6 +34,7 @@ export const HighImpactHero: React.FC<Page['hero']> = ({ richText, media, links 
               imgClassName={classes.image}
               priority
             />
+
             {media?.caption && <RichText content={media.caption} className={classes.caption} />}
           </Fragment>
         )}

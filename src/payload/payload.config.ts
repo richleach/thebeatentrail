@@ -52,7 +52,7 @@ export default buildConfig({
       // Feel free to delete this at any time. Simply remove the line below and the import `BeforeDashboard` statement on line 15.
       beforeDashboard: [BeforeDashboard],
     },
-    //css: path.resolve(__dirname, './src/app/_css/tbtStylesheet.scss'),
+
     webpack: config => {
       return {
         ...config,

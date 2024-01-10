@@ -1,5 +1,6 @@
 import React from 'react'
 
+import richText from '../../../payload/fields/richText'
 import { Page } from '../../../payload/payload-types'
 import { Gutter } from '../../_components/Gutter'
 import { CMSLink } from '../../_components/Link'
@@ -32,6 +33,7 @@ export const ContentBlock: React.FC<
             )
           })}
       </div>
+      <hr style={{ color: 'purple' }} />
     </Gutter>
   )
 }
